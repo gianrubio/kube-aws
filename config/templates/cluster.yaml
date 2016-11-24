@@ -187,6 +187,8 @@ kmsKeyArn: "{{.KMSKeyARN}}"
 #     enabled: true
 #     environment:
 #       CFNSTACK: '{ "Ref" : "AWS::StackId" }'
+#   rbacAuthPlugin
+#     enabled: true
 #   waitSignal:
 #     enabled: true
 

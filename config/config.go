@@ -37,6 +37,9 @@ func newDefaultCluster() *Cluster {
 		NodeLabel{
 			Enabled: false,
 		},
+		RbacAuthPlugin{
+			Enabled: false,
+		},
 		AwsEnvironment{
 			Enabled: false,
 		},
@@ -205,6 +208,7 @@ type Subnet struct {
 type Experimental struct {
 	NodeDrainer    NodeDrainer    `yaml:"nodeDrainer"`
 	NodeLabel      NodeLabel      `yaml:"nodeLabel"`
+	RbacAuthPlugin RbacAuthPlugin `yaml:"rbacAuthPlugin"`
 	AwsEnvironment AwsEnvironment `yaml:"awsEnvironment"`
 	WaitSignal     WaitSignal     `yaml:"waitSignal"`
 }
@@ -214,6 +218,10 @@ type NodeDrainer struct {
 }
 
 type NodeLabel struct {
+	Enabled bool `yaml:"enabled"`
+}
+
+type RbacAuthPlugin struct {
 	Enabled bool `yaml:"enabled"`
 }
 
