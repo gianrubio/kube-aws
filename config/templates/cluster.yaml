@@ -190,6 +190,10 @@ kmsKeyArn: "{{.KMSKeyARN}}"
 #   plugins:
 #     rbac:
 #       enabled: true
+#   auditLog:
+#     enabled: true
+#     maxage: 30
+#     logpath: /var/log/audit/audit.log
 #   waitSignal:
 #     enabled: true
 #   # This option has not yet been tested with rkt as container runtime
