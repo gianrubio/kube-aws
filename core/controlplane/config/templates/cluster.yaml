@@ -624,12 +624,6 @@ worker:
 # daemons start up.
 # manageCertificates: true
 
-# When enabled, autoscaling groups managing controller nodes wait for nodes to be up and running.
-# It is enabled by default.
-#waitSignal:
-#  enabled: true
-#   maxBatchSize: 1
-
 # Experimental features will change in backward-incompatible ways
 # experimental:
 #   # Enable admission controllers
